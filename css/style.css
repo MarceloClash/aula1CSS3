@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap");
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(5deg, #023059, #03658c, #0388a6, #04adbf);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Rubik Puddles", system-ui;
+  font-size: larger;
+}
+
+.center h1 {
+  text-align: center;
+  animation: jump1 3s infinite;
+}
+
+.center p {
+  animation: jump2 3s infinite;
+}
+
+@keyframes jump1 {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes jump2 {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(10px);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+body{
+  background: linear-gradient(5deg, #023059, #03658c, #0388a6, #04adbf);
+}
+
+}
